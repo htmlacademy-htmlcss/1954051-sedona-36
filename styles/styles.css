@@ -31,6 +31,7 @@ body {
   color: #FFFFFF;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   font-size: 20px;
   line-height: 36px;
   border: none;
@@ -38,6 +39,13 @@ body {
 
 .button-brown {
   background-color: #756157;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.button-green {
+  background-color: #7DB54F;
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
@@ -107,7 +115,7 @@ subscribe-title {
 }
 
 .subscribe {
-  background-image: url(/images/subscribe-background.jpg);
+  background-image: url(../images/subscribe-background.jpg);
   background-repeat: no-repeat;
   color: #FFFFFF;
 
@@ -148,9 +156,10 @@ label {
 }
 
 .catalog-filter-container {
-  background-image: url(/images/filter-background.jpg);
+  background-image: url(../images/filter-background.jpg);
   background-repeat: no-repeat;
   color: #FFFFFF;
+  background-color:#756157;
 }
 
 .catalog-filter-title {
