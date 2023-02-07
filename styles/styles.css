@@ -90,6 +90,8 @@ body {
   background-image: url(/images/hero-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-color: #5e94b8;
+  background-size: cover;
 }
 
 
@@ -141,7 +143,8 @@ subscribe-title {
   background-image: url(../images/subscribe-background.jpg);
   background-repeat: no-repeat;
   color: #FFFFFF;
-
+  background-color: #756157;
+  background-size: cover;
 }
 
 .footer-phone a {
