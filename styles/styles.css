@@ -30,6 +30,15 @@
 }
 
 
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0px 0px 15px
+  rgba(0, 0, 0, 0.2);
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
@@ -38,6 +47,10 @@ body {
   background-color: #FFFFFF;
   color: #333333;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
 }
 
 .button {
@@ -52,29 +65,46 @@ body {
   border: none;
 }
 
+.button-small {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .button-brown {
   background-color: #756157;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #FFFFFF;
 }
 
 .button-green {
   background-color: #7DB54F;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #FFFFFF;
+}
+
+.page-navigation {
+  display: flex;
+
+}
+
+.navigation-logo {
+  margin-left: 70px;
 }
 
 .navigation-list {
   text-align: center;
   list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 339px;
 }
 
 .navigation-user {
   text-align: center;
   list-style: none;
   margin: 0;
+  padding: 0;
+  display: flex;
+  width: 268px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -86,14 +116,11 @@ body {
   color: inherit;
 }
 
-.wrapper {
-  width: 1200px;
-  margin: 0 auto;
-  background: #fff;
-  box-shadow: 0px 0px 15px
-  rgba(0, 0, 0, 0.2);
-}
 
+.welcome-logo {
+  display: block;
+  margin: 0 auto;
+}
 
 .main-hero {
   background-image: url(/images/hero-background.jpg);
@@ -117,7 +144,17 @@ subscribe-title {
 
 .advantages-list {
   list-style: none;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.offers-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .advantages-title {
@@ -126,8 +163,13 @@ subscribe-title {
   text-transform: uppercase;
 }
 
+.advantages-item, .offers-item {
+width: 400px;
+min-height: 385px;;
+}
 
 .advantages-item-blue {
+  width: 1200px;
   background-color: #82B3D3;
   color: #FFFFFF;
 }
@@ -155,6 +197,15 @@ subscribe-title {
   color: #FFFFFF;
   background-color: #756157;
   background-size: cover;
+}
+
+.page-footer {
+  display: flex;
+}
+
+
+.footer-social {
+  width: 142px;
 }
 
 .footer-phone a {
@@ -247,11 +298,6 @@ label {
   line-height: 20px;
 }
 
-.button-small {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-}
 
 .pagination {
   list-style: none;
