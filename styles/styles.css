@@ -94,7 +94,12 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  width: 339px;
+  margin-left: 30px;
+  width: 439px;
+}
+
+.navigation-item {
+  padding: 20px 16px;
 }
 
 .navigation-user {
@@ -130,7 +135,13 @@ body {
   background-size: cover;
 }
 
-
+.advantages-title-container {
+  display: block;
+height: 261px;
+margin: 0 auto;
+text-align: center;
+padding: 69px 0;
+}
 
 
 .advantages-heading,
@@ -148,6 +159,7 @@ subscribe-title {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .offers-list {
@@ -191,18 +203,28 @@ min-height: 385px;;
   line-height: 21px;
 }
 
+.advantages-description-wrapper {
+width: 400px;
+}
+
 .subscribe {
   background-image: url(../images/subscribe-background.jpg);
   background-repeat: no-repeat;
   color: #FFFFFF;
   background-color: #756157;
   background-size: cover;
+  text-align: center;
+  padding: 96px 258px 104px;
 }
 
 .page-footer {
   display: flex;
+  flex-wrap: nowrap;
 }
 
+.footer-contacts {
+  margin-left: auto;
+}
 
 .footer-social {
   width: 142px;
@@ -214,6 +236,8 @@ min-height: 385px;;
   font-style: normal;
   line-height: 40px;
   text-decoration: none;
+  margin-right: 194px;
+  width: 331px;
 }
 
 .inner-header-title {
@@ -228,6 +252,11 @@ label {
   line-height: 23px;
 }
 
+.catalog-hotels {
+display: flex;
+flex-wrap: wrap;
+width: 1060px;
+}
 .hotel-name {
   font-size: 24px;
   line-height: 28px;
@@ -243,6 +272,10 @@ label {
   color: inherit;
 }
 
+.catalog-filter-form {
+  display: flex;
+flex-wrap: nowrap;
+}
 .catalog-filter-container {
   background-image: url(../images/filter-background.jpg);
   background-repeat: no-repeat;
@@ -265,6 +298,11 @@ label {
   line-height: 23px;
 }
 
+.hotel-search-results {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 1060px;
+}
 .hotels-amount {
   font-weight: 700;
   font-size: 30px;
@@ -274,6 +312,22 @@ label {
 .hotel-search-sorting {
   font-size: 18px;
   line-height: 21px;
+  margin-left: 192px;
+}
+
+.cards-view-container {
+  margin-left: 70px;
+}
+
+
+.hotel-item {
+width: 300px;
+margin-right: 20px;
+margin-bottom: 20px;
+}
+
+.hotel-item:nth-child(3) {
+  margin-right: 0;
 }
 
 .hotel-name {
@@ -301,7 +355,16 @@ label {
 
 .pagination {
   list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  width: 400px;
 }
+
+.pagination-item {
+width: 60px;
+text-align: center;
+}
+
 .pagination-link {
   color: #FFFFFF;
   background-color: #82B3D3;
