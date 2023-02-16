@@ -372,10 +372,18 @@ flex-wrap: nowrap;
   line-height: 23px;
 }
 
+.hotels-wrapper {
+  padding: 50px 70px 60px;
+}
+
+.search-results-title {
+  width: 450px;
+}
 .hotel-search-results {
   display: flex;
   flex-wrap: nowrap;
   width: 1060px;
+  margin-bottom: 40px;
 }
 .hotels-amount {
   font-weight: 700;
@@ -442,7 +450,11 @@ margin-bottom: 20px;
 .pagination-item {
 width: 60px;
 text-align: center;
+display: block;
+box-sizing: border-box;
+padding: 11px 18px;
 }
+
 .pagination-item:not(:last-child) {
   margin-right: 8px;
 }
