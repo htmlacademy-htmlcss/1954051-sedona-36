@@ -261,6 +261,7 @@ min-height: 385px;
 
 .footer-social {
 width: 150px;
+margin-left: 70px;
 }
 
 
@@ -278,12 +279,14 @@ width: 150px;
 }
 
 .footer-contacts {
-margin-right: auto;
+
 }
 
 
 .footer-developer {
-width: 150px;
+width: 115px;
+margin-right: 70px;
+
 }
 
 
@@ -293,8 +296,6 @@ width: 150px;
   font-style: normal;
   line-height: 40px;
   text-decoration: none;
-  margin-right: 194px;
-  width: 331px;
 }
 
 .inner-header-title {
@@ -409,6 +410,7 @@ flex-wrap: nowrap;
 width: 300px;
 margin-right: 20px;
 margin-bottom: 20px;
+padding: 20px;
 }
 
 .hotel-item:nth-child(3) {
@@ -437,6 +439,10 @@ margin-bottom: 20px;
   line-height: 20px;
 }
 
+
+.hotel-options-wrapper {
+  display: flex;
+}
 
 .pagination {
   list-style: none;
