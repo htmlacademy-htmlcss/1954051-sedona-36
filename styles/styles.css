@@ -185,7 +185,6 @@ subscribe-title {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .offers-list {
@@ -425,7 +424,6 @@ flex-wrap: nowrap;
 .hotel-search-results {
   display: flex;
   flex-wrap: nowrap;
-  width: 1060px;
   margin-bottom: 40px;
 }
 .hotels-amount {
@@ -493,7 +491,6 @@ padding: 20px;
   list-style: none;
   display: flex;
   justify-content: flex-start;
-  width: 400px;
   margin: 0;
   padding: 0;
 }
