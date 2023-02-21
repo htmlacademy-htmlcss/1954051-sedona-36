@@ -440,10 +440,10 @@ label {
 
 
 .catalog-hotels {
-  //*
+  /*
   display: flex;
   flex-wrap: wrap;
-  *//
+  */
   width: 1060px;
   display: grid;
   grid-template-columns: repeat(3, 340px);
@@ -464,20 +464,20 @@ label {
 
 
 .hotel-item {
-  //*
+  /*
   width: 300px;
   margin-right: 20px;
   margin-bottom: 20px;
-  *//
+  */
   padding: 20px;
 }
 
-//*
+/*
 .hotel-item:nth-child(3) {
   margin-right: 0;
 }
 
-*//
+*/
 
 .hotel-name {
   font-weight: 700;
@@ -501,12 +501,12 @@ label {
   line-height: 20px;
 }
 
-//*
+/*
 .hotel-options-wrapper {
   display: flex;
   justify-content: space-between;
 }
-*//
+*/
 
 
 
