@@ -181,8 +181,12 @@ subscribe-title {
   list-style: none;
   margin: 0;
   padding: 0;
+  /*
   display: flex;
   flex-wrap: wrap;
+  */
+  display: grid;
+  grid-template-columns: repeat (3, 400px);
 }
 
 .offers-list {
@@ -232,6 +236,7 @@ subscribe-title {
   background-color: #82B3D3;
   color: #FFFFFF;
   display: flex;
+  grid-column: 1/4 ;
 }
 
 .advantages-item-reverse {
@@ -470,6 +475,11 @@ label {
   margin-bottom: 20px;
   */
   padding: 20px;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: 256px auto auto auto;
+  gap: 20px;
+  width: 340px;
 }
 
 /*
@@ -488,6 +498,7 @@ label {
 
 .hotel-card-link {
   text-decoration: none;
+  grid-column: 1 / 3;
 }
 
 .hotel-type,
@@ -501,12 +512,13 @@ label {
   line-height: 20px;
 }
 
-/*
+
 .hotel-options-wrapper {
   display: flex;
   justify-content: space-between;
+  grid-column: 1 / 3;
 }
-*/
+
 
 
 
