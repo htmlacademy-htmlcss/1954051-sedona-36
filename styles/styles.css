@@ -16,6 +16,13 @@
   font-display: swap;
 }
 
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -54,28 +61,50 @@ body {
 
 .button {
   font-family: "PT Sans", sans-serif;
-  background-color: #82B3D3;
+  background-color: #756157;
   color: #FFFFFF;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 20px;
-  line-height: 36px;
-  border: none;
-}
-
-.button-small {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  border: none;
+  cursor: pointer;
+  padding: 8px 20px;
+  display: inline-block;
+  box-sizing: border-box;
 }
 
-.button-brown {
-  background-color: #756157;
-}
+
 
 .button-green {
   background-color: #7DB54F;
+}
+
+.button-blue {
+  background-color: #82B3D3;
+}
+
+.button-search {
+
+}
+
+.button-subscribe {
+
+}
+
+.button-additional {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.form-buttons-container .button + .button {
+  margin-top: 36px;
+}
+
+.button:focus {
+  border:#5e94b8 2px solid;
 }
 
 .page-navigation {
@@ -85,6 +114,10 @@ body {
 
 .navigation-logo {
   margin-left: 70px;
+}
+
+.sedona-logo {
+
 }
 
 .navigation-list {
@@ -122,9 +155,32 @@ body {
   display: block;
 }
 
+
+.navigation-link-current::after {
+position: absolute;
+content:"";
+display: block;
+margin: o;
+bottom: 0;
+height: 2px;
+background-color: #756257;
+}
 .navigation-user-link {
   min-width: 44px;
   min-height: 64px;
+}
+
+.navigation-user-item:nth-child(1)  {
+  background-image: url('/images/icon-search.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.navigation-user-item:nth-child(2)  {
+  background-image: url('/images/icon-favorites.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
@@ -132,10 +188,26 @@ body {
   margin-left: 20px;
 }
 
+
+.favorites-count {
+display: block;
+position: relative;
+text-decoration: none;
+text-align: center;
+padding: 5px;
+border-radius: 50%;
+width: 20px;
+height: 20px;
+color: #ffffff;
+font-size: 10px;
+line-height: 10px;
+background-color: #7DB54F;
+}
+
 .welcome-logo {
   display: block;
   margin: 0 auto;
-  width: 138px;
+  width: 458px;
 
 }
 
@@ -146,6 +218,7 @@ body {
   background-color: #5e94b8;
   background-size: cover;
   height: 485px;
+  padding: 51px 371px 82px;
 }
 
 .advantages-title-container {
@@ -211,6 +284,31 @@ subscribe-title {
 }
 
 
+.advantages-title::after {
+  content:"";
+  display: block;
+  border-color:#000000;
+}
+
+.offers-item:nth-child(1) {
+  background-image:url('/images/advantage-house.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+}
+
+
+.offers-item:nth-child(2) {
+  background-image:url('/images/advantage-food.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+}
+
+
+.offers-item:nth-child(3) {
+  background-image:url('/images/advantage-souvenirs.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+}
 
 .advantages-item,
 .offers-item,
@@ -251,9 +349,7 @@ subscribe-title {
   background-color: #83B3D333;
 }
 
-.offers-list {
-  list-style: none;
-}
+
 
 .advantages-description,
 .offers-description {
@@ -315,6 +411,30 @@ subscribe-title {
   height: 40px;
 }
 
+.footer-social-link {
+  display: block;
+  height: 40px;
+  background-color:#000000;
+  background-repeat: no-repeat;
+background-position: center;
+background-size: 24px 14px;
+}
+
+.footer-social-link::hover {
+
+}
+
+.footer-social-vk {
+background-image: url('/images/social-vk.svg')
+}
+.footer-social-tg {
+  background-image: url('/images/social-tg.svg')
+  }
+
+  .footer-social-yt {
+    background-image: url('/images/social-yt.svg')
+    }
+
 .footer-contacts {
   width: 331px;
   margin-right: auto;
@@ -374,6 +494,10 @@ label {
   flex-wrap: nowrap;
 }
 
+.catalog-filter-group {
+  margin: 0;
+  padding: 0;
+}
 
 .catalog-filter-group:nth-child(1) {
   width: 150px;
@@ -390,6 +514,10 @@ label {
   margin-right: 70px;
 }
 
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
 .inner-header {
   background-image: url(../images/filter-background.jpg);
   background-repeat: no-repeat;
@@ -402,6 +530,8 @@ label {
 
 .catalog-filter-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-filter-title {
@@ -467,6 +597,9 @@ label {
   display: flex;
 }
 
+.cards-view-container button {
+  margin-right: 8px;
+}
 
 .hotel-item {
   /*
