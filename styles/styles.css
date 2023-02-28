@@ -165,11 +165,19 @@ bottom: 0;
 height: 2px;
 background-color: #756257;
 }
+
 .navigation-user-link {
   min-width: 44px;
   min-height: 64px;
+  position: relative;
 }
 
+.navigation-icon {
+position: absolute;
+fill: #000000;
+}
+
+/*
 .navigation-user-item:nth-child(1)  {
   background-image: url('/images/icon-search.svg');
   background-repeat: no-repeat;
@@ -182,6 +190,7 @@ background-color: #756257;
   background-repeat: no-repeat;
   background-position: center;
 }
+*/
 
 
 .navigation-user-item:nth-child(3) {
