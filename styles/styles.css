@@ -74,16 +74,49 @@ body {
   padding: 8px 20px;
   display: inline-block;
   box-sizing: border-box;
+  border-radius: 4px;
 }
 
 
+.button-search {
+  min-width: 375px;
+}
+
+.button:hover, button:focus {
+background-color: #615048;
+}
+
+.button:active {
+
+}
+
+.button:disabled {
+  opacity: 0.3;
+}
+
+.button-transparent {
+  background-color: transparent;
+}
 
 .button-green {
   background-color: #7DB54F;
 }
 
+.button-green:hover {
+  background-color: ;
+}
+
 .button-blue {
   background-color: #82B3D3;
+}
+
+.button-blue:hover, button-blues:focus {
+  background-color: #68A2CA;
+  }
+
+
+.button-nav {
+  width: 160px;
 }
 
 .button-search {
@@ -91,7 +124,7 @@ body {
 }
 
 .button-subscribe {
-
+width: 23px;
 }
 
 .button-additional {
@@ -221,7 +254,7 @@ background-color: #7DB54F;
 }
 
 .main-hero {
-  background-image: url(/images/hero-background.jpg);
+  background-image: url('/images/hero-background.jpg');
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #5e94b8;
@@ -429,10 +462,17 @@ background-position: center;
 background-size: 24px 14px;
 }
 
-.footer-social-link::hover {
-
+.footer-social-link:hover,
+.footer-social-link:focus {
+fill: #68A2CA;
 }
 
+
+.footer-social-link:active {
+  fill: #68A2CA4D;
+}
+
+/*
 .footer-social-vk {
 background-image: url('/images/social-vk.svg')
 }
@@ -443,6 +483,7 @@ background-image: url('/images/social-vk.svg')
   .footer-social-yt {
     background-image: url('/images/social-yt.svg')
     }
+*/
 
 .footer-contacts {
   width: 331px;
@@ -454,6 +495,13 @@ background-image: url('/images/social-vk.svg')
   width: 115px;
 }
 
+.developer-logo:hover path, .developer-logo:focus path {
+fill: #756157;
+}
+
+.developer-logo path::active {
+fill: #7561574D
+}
 
 .footer-phone a {
   color: #333333;
@@ -462,6 +510,16 @@ background-image: url('/images/social-vk.svg')
   line-height: 40px;
   text-decoration: none;
 }
+
+
+.footer-phone a:focus, .footer-phone a:hover {
+color: #756157;
+}
+
+.footer-phone a:active {
+  color: #7561574D;
+  }
+
 
 .inner-header-title {
   font-weight: 700;
@@ -604,11 +662,20 @@ label {
   margin-left: 70px;
   width: 160px;
   display: flex;
+  justify-content: space-between;
 }
 
-.cards-view-container button {
+.cards-view-container .cards-view {
   margin-right: 8px;
 }
+
+.cards-view:hover, .cards-view:active {
+border: 2px solid #000000;
+}
+
+.cards-view:focus {
+  border: 2px solid #68A2CA;
+  }
 
 .hotel-item {
   /*
@@ -706,4 +773,13 @@ label {
 .pagination-current {
   color: #333333;
   background-color: #F2F2F2;
+}
+
+.pagination-link:active {
+color: #FFFFFF4D;
+}
+
+
+.pagination-link:hover, pagination-link:focus {
+background-color: #68A2CA;
 }
