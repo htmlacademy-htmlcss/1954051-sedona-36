@@ -87,10 +87,11 @@ background-color: #615048;
 }
 
 .button:active {
-
+color: #FFFFFF4D;
 }
 
 .button:disabled {
+  background-color: #E5E5E5;
   opacity: 0.3;
 }
 
@@ -102,15 +103,15 @@ background-color: #615048;
   background-color: #7DB54F;
 }
 
-.button-green:hover {
-  background-color: ;
+.button-green:hover, .button-green:focus {
+  background-color: #6C9E42;
 }
 
 .button-blue {
   background-color: #82B3D3;
 }
 
-.button-blue:hover, button-blues:focus {
+.button-blue:hover, .button-blue:focus {
   background-color: #68A2CA;
   }
 
@@ -124,7 +125,7 @@ background-color: #615048;
 }
 
 .button-subscribe {
-width: 23px;
+width: 232px;
 }
 
 .button-additional {
@@ -142,7 +143,6 @@ width: 23px;
 
 .page-navigation {
   display: flex;
-
 }
 
 .navigation-logo {
@@ -423,6 +423,11 @@ subscribe-title {
   padding: 96px 258px 104px;
 }
 
+
+.subscribe-form {
+  display: flex;
+}
+
 .subscribe-form input {
   width: 452px;
 }
@@ -462,8 +467,8 @@ background-position: center;
 background-size: 24px 14px;
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
+.footer-social-link:hover svg path,
+.footer-social-link:focus svg path{
 fill: #68A2CA;
 }
 
@@ -775,11 +780,11 @@ border: 2px solid #000000;
   background-color: #F2F2F2;
 }
 
-.pagination-link:active {
+.pagination-link:not(.pagination-current):active {
 color: #FFFFFF4D;
 }
 
 
-.pagination-link:hover, pagination-link:focus {
+.pagination-link:not(.pagination-current):hover, pagination-link:not(.pagination-current):focus {
 background-color: #68A2CA;
 }
