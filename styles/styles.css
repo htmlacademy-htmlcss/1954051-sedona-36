@@ -75,11 +75,17 @@ body {
   display: inline-block;
   box-sizing: border-box;
   border-radius: 4px;
+  min-width: 161px;
 }
 
 
 .button-search {
   min-width: 375px;
+}
+
+
+.button-modal-search {
+  width: 577px;
 }
 
 .button:hover, button:focus {
@@ -137,8 +143,9 @@ width: 232px;
   margin-top: 36px;
 }
 
-.button:focus {
-  border:#5e94b8 2px solid;
+.button-transparent:focus {
+  outline:#5e94b8 2px solid;
+  outline-offset: -2px;
 }
 
 .page-navigation {
@@ -184,8 +191,10 @@ width: 232px;
   text-align: center;
   text-decoration: none;
   color: inherit;
-  padding: 20px 16px;
+  padding: 20px 0;
+  margin: 0 16px;
   display: block;
+  position: relative;
 }
 
 
@@ -195,13 +204,18 @@ content:"";
 display: block;
 margin: o;
 bottom: 0;
+left: 0;
 height: 2px;
+width: 100%;
 background-color: #756257;
 }
 
 .navigation-user-link {
   min-width: 44px;
-  min-height: 64px;
+  position: relative;
+}
+
+.navigation-favorite {
   position: relative;
 }
 
@@ -233,7 +247,7 @@ fill: #000000;
 
 .favorites-count {
 display: block;
-position: relative;
+position: absolute;
 text-decoration: none;
 text-align: center;
 padding: 5px;
@@ -461,19 +475,18 @@ subscribe-title {
 .footer-social-link {
   display: block;
   height: 40px;
-  background-color:#000000;
   background-repeat: no-repeat;
 background-position: center;
 background-size: 24px 14px;
 }
 
 .footer-social-link:hover svg path,
-.footer-social-link:focus svg path{
-fill: #68A2CA;
+.footer-social-link:focus svg path {
+fill:#68A2CA;
 }
 
 
-.footer-social-link:active {
+.footer-social-link:active svg path {
   fill: #68A2CA4D;
 }
 
@@ -644,6 +657,7 @@ label {
   height: 49px;
   border-color: rgba(0, 0, 0, 0.2);
 }
+
 
 
 .catalog-hotels {
