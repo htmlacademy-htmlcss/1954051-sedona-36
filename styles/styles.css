@@ -88,7 +88,7 @@ body {
   width: 577px;
 }
 
-.button:hover, button:focus {
+.button:not(.button-transparent):hover, button:not(.button-transparent):focus {
 background-color: #615048;
 }
 
