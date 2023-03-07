@@ -65,7 +65,7 @@
         </section>
         <section class="advantages">
           <div class="advantages-title-container">
-            <h2 class="advantages-heading">Седона — небольшой городок в Аризоне,
+            <h2 class="advantages-heading">Седона — небольшой городок в Аризоне,<br>
               заслуживающий большего!</h2>
             <p class="welcome-content">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
@@ -147,7 +147,7 @@
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input type="email" name="user-email" placeholder="Ваш e-mail">
+            <input type="email" class="field" name="user-email" placeholder="Ваш e-mail">
             <button class="button button-blue button-subscribe" type="submit">ПОДПИСАТЬСЯ</button>
           </form>
         </section>
@@ -206,7 +206,6 @@
               <path d="M98.2 18.2564C96.6 18.2564 95.3 19.0564 94.6 20.2564H94.5C93.9 19.0564 92.7 18.2564 91.1 18.2564C89.7 18.2564 88.6 18.9564 88 20.0564V18.5564H86.1V29.1564H88.1V23.7564C88.1 21.7564 89.1 20.3564 90.7 20.2564C92.2 20.2564 93.1 21.2564 93.1 22.8564V29.1564H95.1V23.5564C95.1 21.1564 96.5 20.2564 97.7 20.2564C99.2 20.2564 100.1 21.2564 100.1 22.8564V29.1564H102.1V22.6564C102.2 20.0564 100.7 18.2564 98.2 18.2564Z" fill="black"/>
               <path d="M109.4 27.3564L105.8 18.4564H103.6L108.4 30.0564C108.1 30.9564 107.7 31.2564 106.7 31.2564H104.2V33.2564H106.7C108.5 33.2564 109.5 32.4564 110.2 30.6564L114.9 18.4564H112.8L109.4 27.3564Z" fill="black"/>
               </svg>
-
           </a>
         </section>
       </footer>
@@ -216,15 +215,15 @@
 
 
 <!--Модальное окно-->
-*/
+
 <div class="modal-container">
-<form class="modal-content" action="https://echo.htmlacademy.ru" method="post"
+<form class="modal-content" action="https://echo.htmlacademy.ru" method="post">
 <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
 <button class="modal-close-button" type="submit">
   <span class="visually-hidden">Закрыть</span>
 </button>
 <div class="modal-search">
-<label class="arrival-date" for arrival="Дата Заезда">
+<label class="arrival-date" for arrival="Дата Заезда">Дата Заезда
 </label>
 <input class="text-input" id="arrival"type="text" placeholder="27 апреля 2020">
 <button class="date-button" type="button">
@@ -233,7 +232,7 @@
 <p class="date-comment">Мы не можем отправить вас в прошлое</p>
 </div>
 <div class="modal-search">
-  <label class="departure-date" for departure="Дата Заезда">
+  <label class="departure-date" for departure="Дата Выезда">Дата Выезда
   </label>
   <input class="text-input" id="departure"type="text" placeholder="1 сентября 2023">
   <button class="date-button" type="button">
@@ -242,7 +241,7 @@
   <p class="date-comment">На эти даты есть свободные номера. Пока есть</p>
   </div>
   <div class="field">
-<label class="field-label" for="adulsts"></label>
+<label class="field-label" for="adulsts">Взрослые</label>
 <span class="field-box">
   <button class="field-button minus">
     <span class="visually-hidden">Минус</span>
@@ -253,7 +252,7 @@
 </span>
   </div>
   <div class="field">
-    <label class="field-label" for="children"></label>
+    <label class="field-label" for="children">Дети</label>
     <span class="field-box">
       <button class="field-button minus">
         <span class="visually-hidden">Минус</span>
@@ -266,5 +265,4 @@
       <button class="button button-blue button-modal-search">Найти</button>
 </form>
 </div>
-/*
 </html>
