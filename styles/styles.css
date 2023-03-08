@@ -228,6 +228,10 @@ background-color: #756257;
   position: relative;
 }
 
+.navigation-user-link:nth-child(1) {
+  margin-right: 3px;
+}
+
 .navigation-user-link:hover svg path, .navigation-user-link:focus svg path {
 fill:#756157;
 }
@@ -389,9 +393,9 @@ subscribe-title {
   position: absolute;
   content:"";
   display: block;
-  margin: -30px;
+  margin: 0;
   margin-left: 170px;
-  bottom: 0;
+  bottom: -30px;
   left: 0;
   height: 2px;
   width: 60px;
@@ -739,10 +743,14 @@ background-image: url(../images/icon-breadcrumbs-arrow.svg);
 position: relative;
 height: 4px;
 margin-bottom: 8px;
-background-color: #FFFFFF;
+background-color: rgba(242, 242, 242, 1)
 }
 
 
+.range-bar {
+  background-color: #FFFFFF;
+
+}
 .range-toggle {
   position: absolute;
   width: 20px;
@@ -774,6 +782,7 @@ right: -10px;
 }
 
 .range-input {
+  position: relative;
 width: 143px;
 padding: 12px auto 20px ;
 font: inherit;
@@ -783,6 +792,9 @@ border: none;
 appearance: textfield;
 }
 
+.catalog-label-text {
+position: absolute;
+}
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button
@@ -877,7 +889,7 @@ height:48px;
 border: 2px solid #E5E5E5;
 }
 
-.cards-view:hover, .cards-view:active {
+.cards-view:hover, .cards-view:active, .cards-view-current {
 border: 2px solid #000000;
 }
 
@@ -922,6 +934,17 @@ border: 2px solid #000000;
   text-decoration: none;
   grid-column: 1 / 3;
 }
+
+.hotel-card-link:hover .hotel-name,
+.hotel-card-link:focus .hotel-name
+{
+  color:#756157;
+}
+
+.hotel-card-link:active .hotel-name {
+  color: #7561574D;
+}
+
 
 .hotel-type,
 .hotel-price {
@@ -995,10 +1018,6 @@ border: 2px solid #000000;
   background-color: #F2F2F2;
 }
 
-.pagination-hidden {
-background-color: transparent;
-color:  #333333;
-}
 
 
 .pagination-link:not(.pagination-current):active {
@@ -1006,15 +1025,28 @@ color: #FFFFFF4D;
 }
 
 
-.pagination-link:not(.pagination-current):hover, pagination-link:not(.pagination-current):focus {
+.pagination-hidden {
+  background-color: transparent;
+  color:  #333333;
+  }
+
+  .pagination-hidden:hover
+  {
+    background-color: #FFFFFF4D;
+    }
+
+
+    .pagination-link:not(.pagination-current):hover,
+    .pagination-link:not(.pagination-hidden):hover,
+    .pagination-link:not(.pagination-current):focus,
+    .pagination-link:not(.pagination-hidden):focus
+{
 background-color: #68A2CA;
 }
 
 
 
-
 .modal-container {
-  display: grid;
   /*
   position: fixed;
   top: 0;
@@ -1043,6 +1075,10 @@ background-color: #68A2CA;
   background-position: center;
   cursor: pointer;
   border: none;
+}
+
+.modal-content {
+  display: grid;
 }
 
 .modal-title {
