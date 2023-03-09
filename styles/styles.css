@@ -152,10 +152,16 @@ width: 232px;
 
 .page-navigation {
   display: flex;
+  position: relative;
+  margin-left: 70px;
 }
 
 .navigation-logo {
-  margin-left: 70px;
+  display: flex;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 1;
 }
 
 .sedona-logo {
@@ -168,7 +174,7 @@ width: 232px;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-left: 30px;
+  margin-left: 210px;
   width: 439px;
   padding-left: 0;
 }
@@ -648,16 +654,18 @@ label {
 
 .breadcrumbs-item {
   margin-right: 25px;
+  position: relative;
 }
 
 
 
 .breadcrumbs-item:not(:last-child)::after {
 position: absolute;
-bottom: 10%;
+bottom: 6px;
+right: -17px;
 content:"";
-width: 7px;
-height: 10px;
+width: 8px;
+height: 11px;
 background-image: url('../images/icon-breadcrumbs-arrow.svg');
 }
 
@@ -943,6 +951,19 @@ border: 2px solid #000000;
   color: #7561574D;
 }
 
+.hotel-card-link:hover .hotel-image,
+.hotel-card-link:focus .hotel-image
+{
+ opacity: 0.8;
+}
+
+.hotel-card-link:active .hotel-image
+{
+ opacity: 0.6;
+}
+
+
+
 
 .hotel-type,
 .hotel-price {
@@ -1035,14 +1056,24 @@ color: #FFFFFF4D;
 
 
     .pagination-link:not(.pagination-current):hover,
-    .pagination-link:not(.pagination-hidden):hover,
-    .pagination-link:not(.pagination-current):focus,
-    .pagination-link:not(.pagination-hidden):focus
+    .pagination-link:not(.pagination-current):focus
 {
 background-color: #68A2CA;
 }
 
+.pagination-item .pagination-hidden:hover,
+.pagination-item .pagination-hidden:focus
+{
+  background-color: #FFF;
+}
 
+
+/*
+.pagination-link:not(.pagination-hidden):hover
+{
+  background-color: #68A2CA;
+  }
+*/
 
 .modal-container {
   /*
@@ -1096,3 +1127,39 @@ display: flex;
 .modal-search input {
 background-color: #F2F2F2;
 }
+
+
+.field-box svg path,
+.field-box:active svg path {
+  fill: rgba(117, 97, 87, 0.3);
+  }
+
+
+
+.field-box:hover svg path
+{
+  fill: rgba(0, 0, 0, 1);
+  }
+
+  .field-box:focus svg path {
+    fill: rgba(0, 0, 0, 1);
+    border: 3px solyd rgba(130, 179, 211, 1);
+    border-radius: 4px;
+    }
+
+/*
+
+    .radio-button:hover {
+
+    }
+
+
+    .radio-button:focus {
+border: 3px solid rgba(131, 179, 211, 1);
+border-radius: 17px;
+    }
+    .radio-button:active {
+
+    }
+
+*/
