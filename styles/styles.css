@@ -79,7 +79,7 @@ body {
 }
 
 
-.button-search {
+.hotel-search-button {
   min-width: 375px;
 }
 
@@ -386,14 +386,15 @@ subscribe-title {
   margin: 0;
 }
 
-.advantages-title,
-.offers-title {
+.advantages-title {
+  position: relative;
   margin-bottom: 62px;
 }
 
-.advantages-title {
-  position: relative;
+.offers-title {
+  margin-bottom: 30px;
 }
+
 
 .advantages .advantages-title:after {
   position: absolute;
@@ -497,7 +498,6 @@ subscribe-title {
 
 
 .hotel-search-link {
-  margin-bottom: 96px;
   text-decoration: none;
   color: #fff;
 }
