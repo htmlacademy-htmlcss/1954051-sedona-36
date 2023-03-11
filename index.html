@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.png"><!-- 32×32 -->
   </head>
 
   <body>
@@ -81,27 +82,27 @@
               <div class="advantages-description-wrapper">
                 <h3 class="advantages-title">Небольшая<br>
                   площадь</h3>
-                <p class="advantages-description">Все достопримечательности <br>находятся очень близко</p>
+                <p class="advantages-description">Все достопримечательности<br> находятся очень близко</p>
               </div>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-item advantages-item-light-blue">
               <div class="advantages-description-wrapper">
                 <h3 class="advantages-title">Красивая<br>
                   дорога</h3>
-                <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                <p class="advantages-description">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
               </div>
             </li>
             <li class="advantages-item advantages-item-grey">
               <div class="advantages-description-wrapper">
                 <h3 class="advantages-title">Мало<br>
                   туристов</h3>
-                <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
+                <p class="advantages-description">Большинство едет в Гранд<br> Каньон и толпится там</p>
               </div>
             </li>
             <li class="advantages-item advantages-item-blue advantages-item-reverse">
               <div class="advantages-description-wrapper">
-                <h3 class="advantages-title">Там есть мост дьяевола</h3>
-                <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                <h3 class="advantages-title">Там есть мост дьявола</h3>
+                <p class="advantages-description">Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
               </div>
               <img class="advantages-image" src="./images/bridge.jpg" width="800" height="400" alt="Фото Седоны">
             </li>
@@ -109,29 +110,29 @@
         </section>
         <section class="advantages-offers">
           <div class="advantages-title-container">
-            <h2 class="advantages-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+            <h2 class="advantages-title">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
             <p>Опытный персонал и качественное обслуживание!</p>
           </div>
           <ul class="offers-list">
             <li class="offers-item advantages-item-grey">
               <div class="advantages-description-wrapper">
                 <h3 class="offers-title">Жильё</h3>
-                <p class="offers-description">Рекомендуем пожить в настоящем мотеле,
+                <p class="offers-description">Рекомендуем пожить<br> в настоящем мотеле,<br>
                   всё как в кино!</p>
               </div>
             </li>
-            <li class="offers-item advantages-item-light-blue">
+            <li class="offers-item">
               <div class="advantages-description-wrapper">
                 <h3 class="offers-title">Еда</h3>
-                <p class="offers-description">Всегда заказывайте
-                  топовый фирменный бургер, вы не разочаруетесь!</p>
+                <p class="offers-description">Всегда заказывайте<br>
+                  топовый фирменный бургер,<br> вы не разочаруетесь!</p>
               </div>
             </li>
             <li class="offers-item  advantages-item-grey">
               <div class="advantages-description-wrapper">
                 <h3 class="offers-title">Сувениры</h3>
-                <p class="offers-description">Не только китайского,
-                  но и настоящего местного производства!</p>
+                <p class="offers-description">Не только китайского,<br>
+                  но и настоящего местного<br> производства!</p>
               </div>
             </li>
           </ul>
@@ -216,32 +217,32 @@
 
 <!--Модальное окно-->
 
-<div class="modal-container">
+<div class="modal-container modal-container-close">
 <form class="modal-content" action="https://echo.htmlacademy.ru" method="post">
 <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
 <button class="modal-close-button" type="submit">
   <span class="visually-hidden">Закрыть</span>
 </button>
 <div class="modal-search">
-<label class="arrival-date" for arrival="Дата Заезда">Дата Заезда
+<label class="arrival-date" for="arrival">Дата Заезда
 </label>
-<input class="text-input" id="arrival"type="text" placeholder="укажите дату заезда" value="27 апреля 2020">
+<input class="text-input" id="arrival" type="text" placeholder="укажите дату заезда" value="27 апреля 2020">
 <button class="date-button" type="button">
   <span class="visually-hidden">Календарь</span>
 </button>
-<p class="date-comment">Мы не можем отправить вас в прошлое</p>
+<p class="date-comment date-comment-red">Мы не можем отправить вас в прошлое</p>
 </div>
 <div class="modal-search">
-  <label class="departure-date" for departure="Дата Выезда">Дата Выезда
+  <label class="departure-date" for="departure">Дата Выезда
   </label>
-  <input class="text-input" id="departure"type="text" placeholder="укажите дату выезда" value="27 апреля 2020">
+  <input class="text-input" id="departure" type="text" placeholder="укажите дату выезда" value="27 апреля 2020">
   <button class="date-button" type="button">
     <span class="visually-hidden">Календарь</span>
   </button>
   <p class="date-comment">На эти даты есть свободные номера. Пока есть</p>
   </div>
   <div class="field">
-<label class="field-label" for="adulsts">Взрослые</label>
+<label class="field-label" for="adults">Взрослые</label>
 <span class="field-box">
   <button class="field-button minus">
   </button>
@@ -256,11 +257,17 @@
   <svg width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="black"/>
     </svg>
-
 </span>
   </div>
   <div class="field">
-    <label class="field-label" for="children">Дети</label>
+  <!--
+    <div class="popover modal-popover">
+    <button class="button-info popover-close-button">
+      <span class="visually-hidden">Закрыть</span>
+      <div class="popover-content">
+        <p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+        </div>
+-->
     <span class="field-box">
       <button class="field-button minus"></button>
         <span class="visually-hidden">Минус</span>

@@ -367,7 +367,7 @@ subscribe-title {
   flex-wrap: wrap;
   */
   display: grid;
-  grid-template-columns: repeat (3, 400px);
+  grid-template-columns: repeat(3, 400px);
 }
 
 .offers-list {
@@ -523,6 +523,11 @@ subscribe-title {
   width: 452px;
 }
 
+
+.subscribe-form-catalog input {
+ background-color: rgba(242, 242, 242, 1);
+}
+
 .field {
   padding-left: 20px;
   font: inherit;
@@ -634,10 +639,7 @@ color: #756157;
   margin-bottom: 8px;
 }
 
-label {
-  font-size: 18px;
-  line-height: 23px;
-}
+
 
 
 .breadcrumbs {
@@ -699,9 +701,15 @@ background-image: url('../images/icon-breadcrumbs-arrow.svg');
   margin-right: 70px;
 }
 
+.catalog-filter-item {
+  font-size: 18px;
+  line-height: 23px;
+}
+
 .catalog-filter-item:not(:last-child) {
   margin-bottom: 16px;
 }
+
 .control {
   position: relative;
   display: block;
@@ -716,6 +724,8 @@ background-image: url('../images/icon-breadcrumbs-arrow.svg');
   width: 20px;
   height: 19px;
   border-radius: 5px;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .inner-header {
@@ -735,8 +745,10 @@ background-image: url('../images/icon-breadcrumbs-arrow.svg');
 }
 
 .catalog-filter-title {
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  margin-bottom: 32px;
 }
 
 .control-input {
@@ -752,6 +764,11 @@ margin-bottom: 8px;
 background-color: rgba(242, 242, 242, 1)
 }
 
+.range-input value {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
 
 .range-bar {
   background-color: #FFFFFF;
@@ -767,7 +784,15 @@ background-color: rgba(242, 242, 242, 1)
   cursor: pointer;
 }
 
+.range-toggle:focus {
+  background-color: #FFFFFF;
+  border: 3px solid #83B3D3;
+}
 
+.range-toggle:active {
+  background-color: #FFFFFF;
+  border: 2px solid #83B3D3;
+}
 .toggle-min {
   top: -10px;
   left: -10px;
@@ -782,7 +807,10 @@ right: -10px;
 .range-wrapper-units {
   display: flex;
   justify-content: center;
+  gap: 2px;
+  margin-bottom: 36px;
 }
+
 .catalog-filter-label {
   display: flex;
 }
@@ -800,6 +828,9 @@ appearance: textfield;
 
 .catalog-label-text {
 position: absolute;
+color: rgba(0, 0, 0, 1);
+font-size: 18px;
+line-height: 24px;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -974,7 +1005,7 @@ border: 2px solid #000000;
 .hotel-rating {
   font-size: 16px;
   line-height: 20px;
-  background-color: #F2F2F2;
+  background-color: rgba(242, 242, 242, 1);
   color: #333333;
   text-align: center;
   text-decoration: none;
@@ -1000,6 +1031,7 @@ border: 2px solid #000000;
 .pagination {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   margin: 0;
   padding: 0;
@@ -1076,16 +1108,14 @@ background-color: #68A2CA;
 */
 
 .modal-container {
-  /*
+
   position: absolute;
-  top: 0;
-  left: 0;
-*/
-display: flex;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(242, 242, 242, 0,8);
-  padding: 64px 70px;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 64px 70px;
 }
 
 
@@ -1108,12 +1138,15 @@ display: flex;
   border: none;
 }
 
+
+/*
 .modal-content {
   display: grid;
-  grid-template-columns: repeat (2, auto);
+  grid-template-columns: repeat(2, auto);
   column-gap: 70px;
-  grid-template-rows: repeat (4, auto);
+  grid-template-rows: repeat(4, auto);
   row-gap: 23px;
+  */
 }
 
 .modal-title {
@@ -1124,10 +1157,43 @@ display: flex;
   margin-bottom: 50px;
 }
 
-.modal-search input {
-background-color: #F2F2F2;
+.arrival-date,
+.departure-date,
+.field-label {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
 }
 
+.modal-search input {
+background-color: #F2F2F2;
+margin: 0;
+padding: 0;
+border: none;
+}
+
+.modal-search .text-input {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  background-color: #F2F2F2;
+}
+
+.date-comment {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.date-comment-red {
+  color: #FF5757;
+}
+
+
+.modal-input value {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
 
 .field-box svg path,
 .field-box:active svg path {
@@ -1143,10 +1209,33 @@ background-color: #F2F2F2;
 
   .field-box:focus svg path {
     fill: rgba(0, 0, 0, 1);
-    border: 3px solyd rgba(130, 179, 211, 1);
+    border: 3px solid rgba(130, 179, 211, 1);
     border-radius: 4px;
     }
 
+    /*
+.button-info {
+  position: relative;
+}
+
+    .popover-content {
+      position:absolute;
+      box-sizing: border-box;
+      top: 0;
+      right: 1;
+      z-index: 1;
+      width: 256px;
+      min-height: 143px;
+      padding; 15px 18px 18px 22px;
+      font-size: 16px;
+      font-weight: 20px;
+      color: #FFFFFF;
+      background-color: rgba(51, 51, 51, 1);
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.3);
+    }
+
+    /*
 /*
 
     .radio-button:hover {
