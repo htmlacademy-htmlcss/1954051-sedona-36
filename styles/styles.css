@@ -426,21 +426,21 @@ subscribe-title {
 .offers-item:nth-child(1) {
   background-image:url('/images/advantage-house.svg');
   background-repeat: no-repeat;
-  background-position: 50% 20%;
+  background-position: 50% 81px;
 }
 
 
 .offers-item:nth-child(2) {
   background-image:url('/images/advantage-food.svg');
   background-repeat: no-repeat;
-  background-position: 50% 20%;
+  background-position: 50% 81px;
 }
 
 
 .offers-item:nth-child(3) {
   background-image:url('/images/advantage-souvenirs.svg');
   background-repeat: no-repeat;
-  background-position: 50% 20%;
+  background-position: 50% 81px;
 }
 
 .advantages-item,
@@ -456,7 +456,15 @@ subscribe-title {
   padding-bottom: 112px;
 }
 
-.offers-list .advantages-description-wrapper {
+
+.offers-description-wrapper {
+  padding-top: 112px;
+  text-align: center;
+  padding-bottom: 81px;
+}
+
+
+.offers-list .offers-description-wrapper {
   padding-top: 183px;
 }
 
