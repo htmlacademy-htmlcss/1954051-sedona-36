@@ -779,7 +779,7 @@ background-image: url('../images/icon-breadcrumbs-arrow.svg');
 position: relative;
 height: 4px;
 margin-bottom: 8px;
-background-color: rgba(242, 242, 242, 1)
+background-color: rgba(242, 242, 242, 0.3);
 }
 
 .range-input value {
@@ -789,8 +789,9 @@ background-color: rgba(242, 242, 242, 1)
 }
 
 .range-bar {
-  background-color: #FFFFFF;
-
+  background-color: #fff;
+  width: 220px;
+  height: 4px;
 }
 .range-toggle {
   position: absolute;
@@ -819,7 +820,7 @@ background-color: rgba(242, 242, 242, 1)
 
 .toggle-max {
 top: -10px;
-right: -10px;
+right: 60px;
 }
 
 .range-wrapper-units {
@@ -844,9 +845,18 @@ appearance: textfield;
 padding: 12px 20px;
 }
 
+.range-input-left {
+  border-radius: 4px 0px 0px 4px;
+}
+
+.range-input-right {
+  border-radius: 0px 4px 4px 0px;
+}
+
 .catalog-label-text {
   position: absolute;
   left: 110px;
+  top: 12px;
   color: rgba(0, 0, 0, 1);
   opacity: 0.3;
   font-size: 18px;
