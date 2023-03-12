@@ -602,7 +602,7 @@ background-image: url('/images/social-vk.svg')
 */
 
 .footer-contacts {
-  width: 331px;
+  width: 360px;
   margin-right: auto;
 }
 
@@ -625,6 +625,7 @@ fill: #7561574D
   font-style: normal;
   line-height: 40px;
   text-decoration: none;
+  text-align: center;
 }
 
 
