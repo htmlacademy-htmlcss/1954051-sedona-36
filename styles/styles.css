@@ -820,12 +820,12 @@ right: -10px;
 
 .catalog-filter-label {
   display: flex;
+  position: relative;
 }
 
 .range-input {
   position: relative;
 width: 143px;
-padding: 12px auto 20px ;
 font: inherit;
 text-align: center;
 background-color: #E5E5E5;
@@ -834,10 +834,11 @@ appearance: textfield;
 }
 
 .catalog-label-text {
-position: absolute;
-color: rgba(0, 0, 0, 1);
-font-size: 18px;
-line-height: 24px;
+  position: absolute;
+  left: 110px;
+  color: rgba(0, 0, 0, 1);
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -1138,12 +1139,13 @@ background-color: #68A2CA;
   right: 0;
   width: 52px;
   height: 52px;
-  background-color: #FFFFFF;
+  background-color: rgba(242, 242, 242, 1)F;
   background-image: url(../images/icon-cross.svg);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
   border: none;
+  border-radius: 50%;
 }
 
 /*
