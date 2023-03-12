@@ -64,6 +64,7 @@ body {
   background-color: #756157;
   color: #FFFFFF;
   text-align: center;
+  margin: auto;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
@@ -75,7 +76,7 @@ body {
   display: inline-block;
   box-sizing: border-box;
   border-radius: 4px;
-  min-width: 161px;
+  min-width: 140px;
 }
 
 
@@ -961,8 +962,9 @@ border: 2px solid #000000;
   */
   padding: 20px;
   display: grid;
-  grid-template-rows: 1fr auto auto auto;
-  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 16px;
 }
 
 /*
@@ -974,7 +976,7 @@ border: 2px solid #000000;
 
 
 .hotel-image {
-  margin-bottom: 16px;
+margin-bottom: 16px;
 }
 
 .hotel-name {
@@ -983,6 +985,7 @@ border: 2px solid #000000;
   line-height: 28px;
   color: #333333;
   margin: 0;
+
 }
 
 .hotel-card-link {
@@ -1018,6 +1021,13 @@ border: 2px solid #000000;
 .hotel-price {
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
+
+}
+
+.hotel-stars {
+  margin: 10px 0;
+
 }
 
 .hotel-rating {
@@ -1029,11 +1039,12 @@ border: 2px solid #000000;
   text-decoration: none;
   text-transform: uppercase;
   border: none;
-  padding: 8px 20px;
   display: inline-block;
   box-sizing: border-box;
   border-radius: 4px;
-  min-width: 161px;
+  min-width: 140px;
+padding: 9px 22px 8px 23px;
+
 }
 
 
