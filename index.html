@@ -218,12 +218,12 @@
 <!--Модальное окно-->
 
 <div class="modal-container modal-container-close">
-<form class="modal-content" action="https://echo.htmlacademy.ru" method="post">
-<h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+  <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
 <button class="modal-close-button" type="submit">
   <span class="visually-hidden">Закрыть</span>
 </button>
-<div class="modal-search">
+<form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+<div class="modal-search-block">
 <label class="arrival-date" for="arrival">Дата Заезда
 </label>
 <input class="text-input" id="arrival" type="text" placeholder="укажите дату заезда" value="27 апреля 2020">
@@ -232,7 +232,7 @@
 </button>
 <p class="date-comment date-comment-red">Мы не можем отправить вас в прошлое</p>
 </div>
-<div class="modal-search">
+<div class="modal-search-block">
   <label class="departure-date" for="departure">Дата Выезда
   </label>
   <input class="text-input" id="departure" type="text" placeholder="укажите дату выезда" value="27 апреля 2020">

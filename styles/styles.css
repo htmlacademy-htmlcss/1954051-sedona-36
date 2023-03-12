@@ -1121,8 +1121,7 @@ background-color: #68A2CA;
   position: absolute;
     top: 0;
     left: 0;
-    display: flex;
-    width: 100%;
+    width: 717px;
     height: 100%;
     padding: 64px 70px;
 }
@@ -1147,16 +1146,15 @@ background-color: #68A2CA;
   border: none;
 }
 
-
 /*
-.modal-content {
+.modal-form {
   display: grid;
   grid-template-columns: repeat(2, auto);
   column-gap: 70px;
   grid-template-rows: repeat(4, auto);
   row-gap: 23px;
-  */
 }
+*/
 
 .modal-title {
   font-weight: 700;
@@ -1174,14 +1172,14 @@ background-color: #68A2CA;
   line-height: 24px;
 }
 
-.modal-search input {
+.modal-search-block input {
 background-color: #F2F2F2;
 margin: 0;
 padding: 0;
 border: none;
 }
 
-.modal-search .text-input {
+.modal-search-block .text-input {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
