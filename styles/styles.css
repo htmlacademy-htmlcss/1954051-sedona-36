@@ -543,6 +543,7 @@ background-color: rgba(255, 255, 255, 1);
 
 .subscribe-form-catalog input {
  background-color: rgba(242, 242, 242, 1);
+ border: none;
 }
 
 .field {
@@ -732,18 +733,52 @@ background-image: url('../images/icon-breadcrumbs-arrow.svg');
   position: relative;
   display: block;
   padding-left: 36px;
+  width: 200px;
 }
 
 
-.control-mark {
+
+
+
+.custom-checkbox {
   position: absolute;
+  display: inline-block;
   top: 2px;
   left: 0px;
   width: 20px;
-  height: 19px;
+  height: 20px;
   border-radius: 5px;
   font-size: 18px;
   line-height: 23px;
+  background-color: #fff;
+  background-image: url(../images/checkbox-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.custom-radio {
+  position: absolute;
+  display: inline-block;
+  top: 2px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 23px;
+  background-color: #fff;
+}
+
+.custom-radio::before {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: rgba(63, 94, 114, 1);
+  border-radius: 50%;
 }
 
 .inner-header {
@@ -769,7 +804,7 @@ background-image: url('../images/icon-breadcrumbs-arrow.svg');
   margin-bottom: 32px;
 }
 
-.control-input {
+.button-label-text {
   font-size: 18px;
   line-height: 23px;
   margin: 0;
