@@ -1232,14 +1232,14 @@ background-color: #68A2CA;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
 }
 
-/*
+
 .modal-form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
   row-gap: 23px;
 }
-*/
+
+
 
 .modal-title {
   font-weight: 700;
@@ -1276,6 +1276,13 @@ border: none;
   background-color: #F2F2F2;
 }
 
+.field-adults {
+ grid-column: 1 / 2;
+}
+
+.field-children {
+ grid-column: 2 / 3;
+}
 
 .date-button {
   position: absolute;
