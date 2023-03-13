@@ -547,7 +547,7 @@ background-color: rgba(255, 255, 255, 1);
 }
 
 .field {
-  padding-left: 20px;
+  display: flex;
   font: inherit;
 }
 
@@ -1188,20 +1188,23 @@ background-color: #68A2CA;
   }
 */
 
-.modal-container {
 
-  position: absolute;
-    top: 0;
-    left: 0;
-    width: 717px;
-    height: 100%;
-    padding: 64px 70px;
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+  z-index: 100;
 }
 
-
+/*
 .modal-container-close {
   display: none;
 }
+*/
 
 .modal-close-button {
   position: absolute;
@@ -1210,7 +1213,7 @@ background-color: #68A2CA;
   right: 0;
   width: 52px;
   height: 52px;
-  background-color: rgba(242, 242, 242, 1)F;
+  background-color: rgba(242, 242, 242, 1);
   background-image: url(../images/icon-cross.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1219,12 +1222,21 @@ background-color: #68A2CA;
   border-radius: 50%;
 }
 
+.modal-content {
+  position: relative;
+  margin: auto;
+  width: 717px;
+  padding: 64px 70px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+}
+
 /*
 .modal-form {
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  column-gap: 70px;
-  grid-template-rows: repeat(4, auto);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   row-gap: 23px;
 }
 */
@@ -1245,6 +1257,10 @@ background-color: #68A2CA;
   line-height: 24px;
 }
 
+.modal-search-block {
+  position: relative;
+}
+
 .modal-search-block input {
 background-color: #F2F2F2;
 margin: 0;
@@ -1253,10 +1269,23 @@ border: none;
 }
 
 .modal-search-block .text-input {
+  width: 440px;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   background-color: #F2F2F2;
+}
+
+
+.date-button {
+  position: absolute;
+  top: 3px;
+  right: 40px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/icon-date.svg);
+  background-repeat: no-repeat;
+  border: none;
 }
 
 .date-comment {
@@ -1268,12 +1297,25 @@ border: none;
   color: #FF5757;
 }
 
+.modal-input {
+  background-color: rgba(242, 242, 242, 1);
+  border: none;
+}
 
 .modal-input value {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
 }
+
+/*
+.field-box {
+  display: flex;
+  width: 110px;
+  margin: 0;
+  padding: 0;
+}
+*/
 
 .field-box svg path,
 .field-box:active svg path {
@@ -1298,6 +1340,7 @@ border: none;
   position: relative;
 }
 
+/*
     .popover-content {
       position:absolute;
       box-sizing: border-box;
@@ -1326,6 +1369,7 @@ border: none;
   border: none;
   border-radius: 50%;
 }
+/*
 /*
 
     .radio-button:hover {

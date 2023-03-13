@@ -218,6 +218,7 @@
 <!--Модальное окно-->
 
 <div class="modal-container modal-container-close">
+  <div class="modal-content">
   <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
 <button class="modal-close-button" type="submit">
   <span class="visually-hidden">Закрыть</span>
@@ -241,48 +242,56 @@
   </button>
   <p class="date-comment">На эти даты есть свободные номера. Пока есть</p>
   </div>
-  <div class="field">
+  <div class="field field-adults">
 <label class="field-label" for="adults">Взрослые</label>
 <span class="field-box">
   <button class="field-button minus">
+    <svg width="21" height="20" aria-hidden="true" focusable="false" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3.39282 9V11H17.3928V9H3.39282Z" fill="black"/>
+      </svg>
+      <span class="visually-hidden">Минус</span>
   </button>
-  <span class="visually-hidden">Минус</span>
-  <svg width="21" height="20" aria-hidden="true" focusable="false" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M3.39282 9V11H17.3928V9H3.39282Z" fill="black"/>
-    </svg>
   <input class="modal-input" type="number" value="2" name="persons-amount">
   <button class="field-button plus">
+    <svg width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="black"/>
+      </svg>
+      <span class="visually-hidden">Плюс</span>
   </button>
-  <span class="visually-hidden">Плюс</span>
-  <svg width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="black"/>
-    </svg>
 </span>
   </div>
-  <div class="field">
-    <label class="field-label" for="Children">Дети</label>
-
+  <div class="field field-children">
+    <label class="field-label" for="Children">Дети
+      <!--
     <div class="popover modal-popover">
     <button class="button-info popover-close-button">
       <span class="visually-hidden">Закрыть</span>
+    </button>
       <div class="popover-content">
         <p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
         </div>
+      </div>
+      -->
+    </label>
     <span class="field-box">
-      <button class="field-button minus"></button>
-        <span class="visually-hidden">Минус</span>
+      <button class="field-button minus">
         <svg width="21" height="20" aria-hidden="true" focusable="false" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M3.39282 9V11H17.3928V9H3.39282Z" fill="black"/>
           </svg>
+          <span class="visually-hidden">Минус</span>
+      </button>
       <input class="modal-input" type="number" value="2" name="persons-amount">
-      <button class="field-button plus"> </button>
-        <span class="visually-hidden">Плюс</span>
+      <button class="field-button plus">
         <svg width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="black"/>
           </svg>
+          <span class="visually-hidden">Плюс</span>
+      </button>
     </span>
       </div>
-      <button class="button button-blue button-modal-search">Найти</button>
+
+      <button class="button button-blue button-modal-search" type="submit">Найти</button>
 </form>
+</div>
 </div>
 </html>
