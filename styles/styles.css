@@ -1323,6 +1323,11 @@ border: none;
 }
 
 .modal-input {
+  width: 31px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
   background-color: rgba(242, 242, 242, 1);
   border: none;
 }
@@ -1333,14 +1338,20 @@ border: none;
   line-height: 20px;
 }
 
-/*
+.field-button {
+  border: none;
+  background-color: rgba(242, 242, 242, 1);
+  width: 40px;
+  height: 48px;
+}
+
+
 .field-box {
   display: flex;
-  width: 110px;
   margin: 0;
   padding: 0;
 }
-*/
+
 
 .field-box svg path,
 .field-box:active svg path {
