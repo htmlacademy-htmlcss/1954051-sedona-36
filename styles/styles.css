@@ -739,6 +739,24 @@ background-image: url('../images/icon-breadcrumbs-arrow.svg');
 
 
 
+.control-input[type="checkbox"]:checked + .custom-checkbox::before  {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  top: 2px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 23px;
+  background-color: #fff;
+  background-image: url(../images/checkbox-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+
 
 .custom-checkbox {
   position: absolute;
@@ -751,9 +769,6 @@ background-image: url('../images/icon-breadcrumbs-arrow.svg');
   font-size: 18px;
   line-height: 23px;
   background-color: #fff;
-  background-image: url(../images/checkbox-arrow.svg);
-  background-repeat: no-repeat;
-  background-position: 50%;
 }
 
 .custom-radio {
@@ -769,7 +784,8 @@ background-image: url('../images/icon-breadcrumbs-arrow.svg');
   background-color: #fff;
 }
 
-.custom-radio::before {
+
+.control-input[type="radio"]:checked + .custom-radio::before {
   position: absolute;
   content: "";
   top: 5px;
@@ -780,6 +796,8 @@ background-image: url('../images/icon-breadcrumbs-arrow.svg');
   background-color: rgba(63, 94, 114, 1);
   border-radius: 50%;
 }
+
+
 
 .inner-header {
   background-image: url(../images/filter-background.jpg);
