@@ -88,9 +88,11 @@ body {
 .button-modal-search {
   width: 577px;
   padding: 18px 256px;
+  grid-column: 1 / -1;
 }
 
-.button:hover, button:focus {
+.button:hover,
+.button:focus {
 background-color: #615048;
 outline: none;
 }
@@ -550,6 +552,7 @@ background-color: rgba(255, 255, 255, 1);
 .field {
   display: flex;
   font: inherit;
+  align-items: center;
 }
 
 .field:hover,
@@ -744,7 +747,7 @@ background-image: url('../images/icon-breadcrumbs-arrow.svg');
   position: absolute;
   display: inline-block;
   content: "";
-  top: 2px;
+  top: 0px;
   left: 0px;
   width: 20px;
   height: 20px;
@@ -770,6 +773,19 @@ background-image: url('../images/icon-breadcrumbs-arrow.svg');
   font-size: 18px;
   line-height: 23px;
   background-color: #fff;
+}
+
+
+.control-input:hover .custom-checkbox {
+opacity: 0.5;
+}
+
+.control-input:focus .custom-checkbox {
+  outline: 3px solid rgba(131, 179, 211, 1);
+}
+
+.control-input:disabled ~ .custom-checkbox + .button-label-text {
+  opacity: 0.3;
 }
 
 .custom-radio {
@@ -1228,17 +1244,26 @@ background-color: #68A2CA;
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 0;
-  right: 0;
+  top: 90px;
+  right: 60px;
   width: 52px;
   height: 52px;
   background-color: rgba(242, 242, 242, 1);
-  background-image: url(../images/icon-cross.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
   border: none;
   border-radius: 50%;
+}
+
+.modal-close-button:hover {
+background-color: rgba(230, 230, 230, 1);
+}
+
+.modal-close-button:focus {
+outline: 3px solid rgba(131, 179, 211, 1);
+}
+
+.modal-close-button:active path{
+opacity: 0.3;
 }
 
 .modal-content {
@@ -1254,7 +1279,7 @@ background-color: #68A2CA;
 
 .modal-form {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 288px);
   row-gap: 23px;
 }
 
@@ -1276,8 +1301,12 @@ background-color: #68A2CA;
   line-height: 24px;
 }
 
+.field-label {
+  margin-right: 46px;
+}
 .modal-search-block {
   position: relative;
+  grid-column: 1 / -1;
 }
 
 .modal-search-block input {
@@ -1296,12 +1325,14 @@ border: none;
   padding: 12px 295px 12px 20px;
 }
 
+
 .field-adults {
  grid-column: 1 / 2;
 }
 
 .field-children {
  grid-column: 2 / 3;
+ justify-content: flex-end;
 }
 
 .date-button {
@@ -1318,6 +1349,7 @@ border: none;
 .date-comment {
   font-size: 16px;
   line-height: 21px;
+  margin-left: 137px;
 }
 
 .date-comment-red {
@@ -1348,6 +1380,7 @@ border: none;
 }
 
 
+
 .field-box {
   display: flex;
   margin: 0;
@@ -1362,16 +1395,13 @@ border: none;
 
 
 
-.field-box:hover svg path
-{
-  fill: rgba(0, 0, 0, 1);
-  }
 
-  .field-box:focus svg path {
-    fill: rgba(0, 0, 0, 1);
-    border: 3px solid rgba(130, 179, 211, 1);
-    border-radius: 4px;
+    .field-button:focus svg path {
+      fill: rgba(0, 0, 0, 1);
+      outline: 3px solid rgba(130, 179, 211, 1);
+      border-radius: 4px;
     }
+
 
 
 .button-info {

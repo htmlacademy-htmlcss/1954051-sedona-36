@@ -221,6 +221,9 @@
   <div class="modal-content">
   <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
 <button class="modal-close-button" type="submit">
+  <svg width="21" height="20" aria-hidden="true" focusable="false" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.3928 4.29231L16.1005 3L10.3928 8.70769L4.68513 3L3.39282 4.29231L9.10051 10L3.39282 15.7077L4.68513 17L10.3928 11.2923L16.1005 17L17.3928 15.7077L11.6851 10L17.3928 4.29231Z" fill="black"/>
+    </svg>
   <span class="visually-hidden">Закрыть</span>
 </button>
 <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
@@ -243,7 +246,7 @@
   <p class="date-comment">На эти даты есть свободные номера. Пока есть</p>
   </div>
   <div class="field field-adults">
-<label class="field-label" for="adults">Взрослые</label>
+<label class="field-label" for="adults">Взрослые:</label>
 <span class="field-box">
   <button class="field-button minus">
     <svg width="21" height="20" aria-hidden="true" focusable="false" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -251,7 +254,7 @@
       </svg>
       <span class="visually-hidden">Минус</span>
   </button>
-  <input class="modal-input" type="number" value="2" name="persons-amount">
+  <input class="modal-input" id="adults" type="number" value="2" name="persons-amount">
   <button class="field-button plus">
     <svg width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="black"/>
@@ -261,8 +264,8 @@
 </span>
   </div>
   <div class="field field-children">
-    <label class="field-label" for="Children">Дети
-      <!--
+    <label class="field-label" for="children">Дети:
+  <!--
     <div class="popover modal-popover">
     <button class="button-info popover-close-button">
       <span class="visually-hidden">Закрыть</span>
@@ -280,7 +283,7 @@
           </svg>
           <span class="visually-hidden">Минус</span>
       </button>
-      <input class="modal-input" type="number" value="2" name="persons-amount">
+      <input class="modal-input" id="children" type="number" value="2" name="persons-amount">
       <button class="field-button plus">
         <svg width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="black"/>
