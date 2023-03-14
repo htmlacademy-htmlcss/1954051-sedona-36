@@ -120,6 +120,10 @@ outline: none;
   background-color: #6C9E42;
 }
 
+
+.button-form {
+  min-width: 191px;
+}
 .button-blue {
   background-color: #82B3D3;
 }
@@ -670,6 +674,7 @@ color: #756157;
   line-height: 21px;
   list-style: none;
   display: flex;
+  width: 200px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -701,6 +706,7 @@ background-image: url('../images/icon-breadcrumbs-arrow.svg');
 .catalog-filter-form {
   display: flex;
   flex-wrap: nowrap;
+  width: 1060px;
 }
 
 .catalog-filter-group {
@@ -716,7 +722,7 @@ background-image: url('../images/icon-breadcrumbs-arrow.svg');
 
 .catalog-filter-group:nth-child(2) {
   width: 150px;
-  margin-right: 167px;
+  margin-right: 140px;
 }
 
 .catalog-filter-group:nth-child(3) {
@@ -724,6 +730,10 @@ background-image: url('../images/icon-breadcrumbs-arrow.svg');
   margin-right: 70px;
 }
 
+
+.form-buttons-container {
+  margin-top: 56px;
+}
 .catalog-filter-item {
   font-size: 18px;
   line-height: 23px;
@@ -776,15 +786,21 @@ background-image: url('../images/icon-breadcrumbs-arrow.svg');
 }
 
 
-.control-input:hover .custom-checkbox {
+.control-input:hover + .custom-checkbox,
+.control-input:hover + .custom-radio
+{
 opacity: 0.5;
 }
 
-.control-input:focus .custom-checkbox {
+.control-input:focus + .custom-checkbox,
+.control-input:focus + .custom-radio
+{
   outline: 3px solid rgba(131, 179, 211, 1);
 }
 
-.control-input:disabled ~ .custom-checkbox + .button-label-text {
+.control-input:disabled ~ .custom-checkbox + .button-label-text,
+.control-input:disabled ~ .custom-radio + .button-label-text
+{
   opacity: 0.3;
 }
 
@@ -827,6 +843,7 @@ opacity: 0.5;
 
 
 .catalog-filter-list {
+  width: 150px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -884,7 +901,6 @@ background-color: rgba(242, 242, 242, 0.3);
 }
 .toggle-min {
   top: -10px;
-  left: -10px;
   }
 
 
@@ -1301,11 +1317,23 @@ opacity: 0.3;
   line-height: 24px;
 }
 
+
+.arrival-date {
+  margin-right: 24px;
+}
+
+.departure-date
+{
+  margin-right: 18px;
+}
+
 .field-label {
   margin-right: 46px;
+  position: relative;
 }
 .modal-search-block {
   position: relative;
+  width: 577px;
   grid-column: 1 / -1;
 }
 
@@ -1322,7 +1350,7 @@ border: none;
   font-size: 18px;
   line-height: 20px;
   background-color: #F2F2F2;
-  padding: 12px 295px 12px 20px;
+  padding: 12px 200px 12px 20px;
 }
 
 
@@ -1335,6 +1363,7 @@ border: none;
  justify-content: flex-end;
 }
 
+
 .date-button {
   position: absolute;
   top: 12px;
@@ -1346,10 +1375,13 @@ border: none;
   border: none;
 }
 
+
 .date-comment {
   font-size: 16px;
   line-height: 21px;
+  margin: 0;
   margin-left: 137px;
+
 }
 
 .date-comment-red {
@@ -1388,6 +1420,10 @@ border: none;
 }
 
 
+.field-box-children {
+margin-left: 46px;
+}
+
 .field-box svg path,
 .field-box:active svg path {
   fill: rgba(117, 97, 87, 0.3);
@@ -1411,23 +1447,27 @@ border: none;
     .popover-content {
       position:absolute;
       box-sizing: border-box;
-      top: 0;
-      right: 1;
+      top: 30px;
+     left: -50px;
       z-index: 1;
       width: 256px;
       min-height: 143px;
-      padding; 15px 18px 18px 22px;
+      padding: 15px 18px 18px 22px;
+      font-weight: 400;
       font-size: 16px;
-      font-weight: 20px;
+     line-height: 20px;
       color: #FFFFFF;
       background-color: rgba(51, 51, 51, 1);
       border-radius: 10px;
       box-shadow: rgba(0, 0, 0, 0.3);
     }
 
+
 .popover-close-button {
+  position: absolute;
   width: 26px;
   height: 26px;
+  margin-left: 10px;
   background-color: rgba(131, 179, 211, 1);
   background-image: url(../images/icon-info.svg);
   background-repeat: no-repeat;
