@@ -82,6 +82,9 @@ body {
 
 .hotel-search-button {
   min-width: 375px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 
@@ -145,6 +148,9 @@ body {
 .button-search {}
 
 .button-subscribe {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
   width: 232px;
 }
 
@@ -184,7 +190,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-left: 210px;
+  margin-left: 167px;
   width: 439px;
   padding-left: 0;
 }
@@ -210,7 +216,7 @@ body {
   align-items: center;
   width: 268px;
   margin-left: auto;
-  margin-right: 70px;
+  margin-right: 58px;
 }
 
 
@@ -246,7 +252,7 @@ body {
 }
 
 .navigation-user-link:nth-child(1) {
-  margin-right: 3px;
+  margin-left: 5px;
 }
 
 .navigation-user-link:hover svg path,
@@ -343,24 +349,46 @@ body {
 
 .advantages-title-container {
   display: block;
-  height: 261px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 69px;
+  padding-top: 49px;
   padding-bottom: 69px;
 }
 
+.advantages-wide-container {
+padding-top: 34px;
+padding-bottom: 64px;
+}
+
+.advantages-wide-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.advantages-wide-description {
+  margin: 0;
+}
 
 .advantages-heading,
-subscribe-title {
+.subscribe-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
+.subscribe-title {
+  margin: 0;
+}
 
 
 .search-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -468,6 +496,10 @@ subscribe-title {
   padding-bottom: 112px;
 }
 
+.advantages-item-blue .advantages-description-wrapper {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
 
 .offers-description-wrapper {
   padding-top: 112px;
@@ -525,7 +557,7 @@ subscribe-title {
 
 .subscribe {
   text-align: center;
-  padding: 96px 258px 104px;
+  padding: 96px 258px 104px 258px;
 }
 
 .subscribe-main {
@@ -537,6 +569,15 @@ subscribe-title {
 
 }
 
+.subscribe-form input {
+  font-size: 18px;
+  line-height: 24px;
+  padding-left: 20px;
+}
+
+.subscribe-description {
+margin-bottom: 54px;
+}
 .subscribe-catalog {
   color: rgba(51, 51, 51, 1);
   background-color: rgba(255, 255, 255, 1);
@@ -574,7 +615,7 @@ subscribe-title {
 
 .footer-social {
   width: 200px;
-  margin-right: 150px;
+  margin-right: 180px;
 }
 
 
@@ -629,6 +670,7 @@ background-image: url('/images/social-vk.svg')
 
 .footer-developer {
   width: 115px;
+  margin-top: 5px;
 }
 
 .developer-logo:hover path,
@@ -887,7 +929,6 @@ background-image: url('/images/social-vk.svg')
   height: 20px;
   border: none;
   border-radius: 5px;
-  background: ;
   cursor: pointer;
 }
 
@@ -1248,11 +1289,11 @@ background-image: url('/images/social-vk.svg')
   z-index: 100;
 }
 
-/*
+
 .modal-container-close {
   display: none;
 }
-*/
+
 
 .modal-close-button {
   position: absolute;
