@@ -786,10 +786,9 @@ background-image: url('../images/icon-breadcrumbs-arrow.svg');
 }
 
 
-.control-input:hover + .custom-checkbox,
-.control-input:hover + .custom-radio
+.control-input:hover ~ span
 {
-opacity: 0.5;
+opacity: 0.6;
 }
 
 .control-input:focus + .custom-checkbox,
@@ -1316,7 +1315,10 @@ opacity: 0.3;
   font-size: 20px;
   line-height: 24px;
 }
-
+.arrival-date,
+.departure-date {
+width: 136px;
+}
 
 .arrival-date {
   margin-right: 24px;
@@ -1367,7 +1369,7 @@ border: none;
 .date-button {
   position: absolute;
   top: 12px;
-  right: 40px;
+  right: 17px;
   width: 20px;
   height: 20px;
   background-image: url(../images/icon-date.svg);
@@ -1429,14 +1431,19 @@ margin-left: 46px;
   fill: rgba(117, 97, 87, 0.3);
   }
 
+.field-button:focus svg {
+  outline: 3px solid rgba(130, 179, 211, 1);
+  border-radius: 4px;
+}
 
+.field-button:focus svg path {
+  fill: rgba(0, 0, 0, 1);
+}
 
+.field-button:hover svg path {
+  fill: rgba(0, 0, 0, 1);
+}
 
-    .field-button:focus svg path {
-      fill: rgba(0, 0, 0, 1);
-      outline: 3px solid rgba(130, 179, 211, 1);
-      border-radius: 4px;
-    }
 
 
 
