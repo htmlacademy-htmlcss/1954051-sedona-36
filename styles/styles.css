@@ -1408,7 +1408,6 @@ border: none;
   position: relative;
 }
 
-/*
     .popover-content {
       position:absolute;
       box-sizing: border-box;
@@ -1437,20 +1436,3 @@ border: none;
   border: none;
   border-radius: 50%;
 }
-/*
-/*
-
-    .radio-button:hover {
-
-    }
-
-
-    .radio-button:focus {
-border: 3px solid rgba(131, 179, 211, 1);
-border-radius: 17px;
-    }
-    .radio-button:active {
-
-    }
-
-*/
