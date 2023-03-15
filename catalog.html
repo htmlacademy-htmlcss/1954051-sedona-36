@@ -116,7 +116,7 @@
                   <label class="control">
                     <input class="control-input  visually-hidden" type="radio" name="type">
                     <span class="custom-radio"></span>
-                    <span class="button-label-text">Отель</span>
+                    <span class="button-label-text">Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
@@ -132,10 +132,16 @@
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <div class="range">
                 <div class="range-wrapper-units">
-                  <label class="catalog-filter-label"><input class="range-input range-input-left" type="number"
-                      value="0" name="min-price"><span class="catalog-label-text">от</span></label>
-                  <label class="catalog-filter-label"><input class="range-input range-input-right" type="number"
-                      value="9000" name="max-price"><span class="catalog-label-text">до</span></label>
+                  <label class="catalog-filter-label">
+                    <input class="range-input range-input-left" type="number"
+                      value="0" name="min-price">
+                      <span class="catalog-label-text">от</span>
+                    </label>
+                  <label class="catalog-filter-label">
+                    <input class="range-input range-input-right" type="number"
+                      value="9000" name="max-price">
+                      <span class="catalog-label-text">до</span>
+                    </label>
                 </div>
                 <div class="range-scale">
                   <div class="range-bar">
@@ -162,16 +168,14 @@
             <div class="cards-view-container">
               <a href="#" class="cards-view cards-view-current"><span class="visually-hidden">Показать карточки</span>
                 <svg width="16" height="14" aria-hidden="true" focusable="false" viewBox="0 0 16 14" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2 0H0V2H2V0Z" fill="black" />
-                  <path d="M16 0H4V2H16V0Z" fill="black" />
-                  <path d="M2 4H0V6H2V4Z" fill="black" />
-                  <path d="M16 4H4V6H16V4Z" fill="black" />
-                  <path d="M2 8H0V10H2V8Z" fill="black" />
-                  <path d="M16 8H4V10H16V8Z" fill="black" />
-                  <path d="M2 12H0V14H2V12Z" fill="black" />
-                  <path d="M16 12H4V14H16V12Z" fill="black" />
-                </svg>
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 0H0V6H4V0Z" fill="black" />
+                <path d="M16 0H12V6H16V0Z" fill="black" />
+                <path d="M10 0H6V6H10V0Z" fill="black" />
+                <path d="M4 8H0V14H4V8Z" fill="black" />
+                <path d="M16 8H12V14H16V8Z" fill="black" />
+                <path d="M10 8H6V14H10V8Z" fill="black" />
+              </svg>
               </a>
               <a href="#" class="cards-view"><span class="visually-hidden">Показать карточку</span>
                 <svg width="16" height="14" aria-hidden="true" focusable="false" viewBox="0 0 16 14" fill="none"
@@ -182,14 +186,16 @@
               </a>
               <a href="#" class="cards-view"><span class="visually-hidden">Показать список</span>
                 <svg width="16" height="14" aria-hidden="true" focusable="false" viewBox="0 0 16 14" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4 0H0V6H4V0Z" fill="black" />
-                  <path d="M16 0H12V6H16V0Z" fill="black" />
-                  <path d="M10 0H6V6H10V0Z" fill="black" />
-                  <path d="M4 8H0V14H4V8Z" fill="black" />
-                  <path d="M16 8H12V14H16V8Z" fill="black" />
-                  <path d="M10 8H6V14H10V8Z" fill="black" />
-                </svg>
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 0H0V2H2V0Z" fill="black" />
+                <path d="M16 0H4V2H16V0Z" fill="black" />
+                <path d="M2 4H0V6H2V4Z" fill="black" />
+                <path d="M16 4H4V6H16V4Z" fill="black" />
+                <path d="M2 8H0V10H2V8Z" fill="black" />
+                <path d="M16 8H4V10H16V8Z" fill="black" />
+                <path d="M2 12H0V14H2V12Z" fill="black" />
+                <path d="M16 12H4V14H16V12Z" fill="black" />
+              </svg>
               </a>
             </div>
           </section>
@@ -290,7 +296,7 @@
         </div>
         <section class="subscribe subscribe-catalog">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form subscribe-form-catalog" action="https://echo.htmlacademy.ru/" method="post">
             <input type="email" name="user-email" placeholder="Ваш e-mail">
             <button class="button button-blue button-subscribe" type="submit">ПОДПИСАТЬСЯ</button>
