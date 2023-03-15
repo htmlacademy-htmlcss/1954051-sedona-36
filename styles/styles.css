@@ -1398,6 +1398,7 @@ background-image: url('/images/social-vk.svg')
 }
 
 .field-children {
+  position: relative;
   grid-column: 2 / 3;
   justify-content: flex-end;
 }
@@ -1491,8 +1492,8 @@ background-image: url('/images/social-vk.svg')
 .popover-content {
   position: absolute;
   box-sizing: border-box;
-  top: 30px;
-  left: -50px;
+  top: 50px;
+  left: -20px;
   z-index: 1;
   width: 256px;
   min-height: 143px;
@@ -1506,6 +1507,9 @@ background-image: url('/images/social-vk.svg')
   box-shadow: rgba(0, 0, 0, 0.3);
 }
 
+.popover-description {
+  margin: 0;
+}
 
 .popover-close-button {
   position: absolute;
