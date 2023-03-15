@@ -50,7 +50,7 @@ body {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
-  background-color: #FFFFFF;
+  background-color: rgba(242, 242, 242, 1);
   color: #333333;
   margin: 0;
   display: flex;
@@ -172,6 +172,7 @@ body {
   display: flex;
   position: relative;
   margin-left: 70px;
+  margin-right: 59px;
 }
 
 .navigation-logo {
@@ -216,7 +217,6 @@ body {
   align-items: center;
   width: 268px;
   margin-left: auto;
-  margin-right: 58px;
 }
 
 
@@ -247,13 +247,11 @@ body {
 }
 
 .navigation-user-link {
-  min-width: 44px;
+  min-width: 40px;
   position: relative;
 }
 
-.navigation-user-link:nth-child(1) {
-  margin-left: 5px;
-}
+
 
 .navigation-user-link:hover svg path,
 .navigation-user-link:focus svg path {
@@ -275,32 +273,30 @@ body {
   fill: #000000;
 }
 
-/*
-.navigation-user-item:nth-child(1)  {
-  background-image: url('/images/icon-search.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+
+
+
+.navigation-user-item:nth-child(1) {
+  margin-right: 15px;
 }
 
 
-.navigation-user-item:nth-child(2)  {
-  background-image: url('/images/icon-favorites.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+
+.navigation-user-item:nth-child(2) {
+  margin-right: 22px;
 }
-*/
 
 
-.navigation-user-item:nth-child(3) {
-  margin-left: 20px;
-}
+
+
+
 
 
 .favorites-count {
   display: block;
   position: absolute;
-  top: -7px;
-  right: 1px;
+  top: -9px;
+  right: 4px;
   text-decoration: none;
   text-align: center;
   padding: 5px;
@@ -326,7 +322,6 @@ body {
   background-repeat: no-repeat;
   background-color: #5e94b8;
   background-size: cover;
-  height: 485px;
   padding: 51px 371px 82px;
   position: relative;
 }
@@ -356,7 +351,7 @@ body {
 }
 
 .advantages-wide-container {
-padding-top: 34px;
+padding-top: 36px;
 padding-bottom: 64px;
 }
 
@@ -378,7 +373,9 @@ padding-bottom: 64px;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-top: 20px;
 }
+
 .subscribe-title {
   margin: 0;
 }
@@ -609,7 +606,7 @@ margin-bottom: 54px;
 .page-footer {
   display: flex;
   flex-wrap: nowrap;
-  padding: 40px 70px 30px;
+  padding: 45px 70px 30px;
 }
 
 
