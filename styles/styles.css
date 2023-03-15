@@ -90,6 +90,7 @@ body {
 
 .button-modal-search {
   width: 577px;
+  margin-top: 25px;
   padding: 18px 256px;
   grid-column: 1 / -1;
 }
@@ -1296,17 +1297,17 @@ background-image: url('/images/social-vk.svg')
   z-index: 100;
 }
 
-
+/*
 .modal-container-close {
   display: none;
 }
-
+*/
 
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 90px;
-  right: 60px;
+  top: 64px;
+  right: 50px;
   width: 52px;
   height: 52px;
   background-color: rgba(242, 242, 242, 1);
@@ -1351,7 +1352,8 @@ background-image: url('/images/social-vk.svg')
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-top: 0px;
+  margin-bottom: 64px;
 }
 
 .arrival-date,
@@ -1380,6 +1382,10 @@ background-image: url('/images/social-vk.svg')
   position: relative;
 }
 
+
+.field-children .field-label {
+margin-right: 0;
+}
 .modal-search-block {
   position: relative;
   width: 577px;
@@ -1397,9 +1403,9 @@ background-image: url('/images/social-vk.svg')
   width: 440px;
   font-weight: 700;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 24px;
   background-color: #F2F2F2;
-  padding: 12px 200px 12px 20px;
+  padding: 14px 200px 14px 20px;
 }
 
 
@@ -1430,11 +1436,12 @@ background-image: url('/images/social-vk.svg')
   font-size: 16px;
   line-height: 21px;
   margin: 0;
-  margin-left: 137px;
+  margin-left: 155px;
 
 }
 
 .date-comment-red {
+  margin-top: 4px;
   color: #FF5757;
 }
 
@@ -1503,16 +1510,16 @@ background-image: url('/images/social-vk.svg')
   position: absolute;
   box-sizing: border-box;
   top: 50px;
-  left: -20px;
+  left: -8px;
   z-index: 1;
   width: 256px;
   min-height: 143px;
-  padding: 15px 18px 18px 22px;
+  padding: 20px 18px 18px 22px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
-  background-color: rgba(51, 51, 51, 1);
+  background-color:rgba(51, 51, 51, 1);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.3);
 }
@@ -1522,7 +1529,6 @@ background-image: url('/images/social-vk.svg')
 }
 
 .popover-close-button {
-  position: absolute;
   width: 26px;
   height: 26px;
   margin-left: 10px;
@@ -1531,6 +1537,6 @@ background-image: url('/images/social-vk.svg')
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 1);
   border-radius: 50%;
 }

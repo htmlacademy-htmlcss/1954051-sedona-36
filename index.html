@@ -273,7 +273,7 @@
         <div class="modal-search-block">
           <label class="departure-date" for="departure">Дата Выезда
           </label>
-          <input class="text-input" id="departure" type="text" placeholder="укажите дату выезда" value="27 апреля 2020">
+          <input class="text-input" id="departure" type="text" placeholder="укажите дату выезда" value="1 сентября 2023">
           <button class="date-button" type="button">
             <span class="visually-hidden">Календарь</span>
           </button>
@@ -301,10 +301,10 @@
         </div>
         <div class="field field-children">
           <label class="field-label" for="children">Дети:
-            <button class="button-info popover-close-button" id="children">
-              <span class="visually-hidden">Закрыть</span>
-            </button>
           </label>
+          <button class="button-info popover-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
           <div class="popover modal-popover">
             <div class="popover-content">
               <p class="popover-description">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
@@ -319,7 +319,7 @@
               </svg>
               <span class="visually-hidden">Минус</span>
             </button>
-            <input class="modal-input" type="number" value="2" name="persons-amount">
+            <input class="modal-input" id="children" type="number" value="2" name="persons-amount">
             <button class="field-button plus">
               <svg width="20" height="20" aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
