@@ -242,12 +242,12 @@ body {
 
 
 
-.navigation-user-link:hover svg path,
-.navigation-user-link:focus svg path {
+.navigation-user-link:hover path,
+.navigation-user-link:focus path {
   fill: #756157;
 }
 
-.navigation-user-link:active svg path {
+.navigation-user-link:active path {
   fill: rgba(0, 0, 0, 0.2);
 }
 
@@ -589,12 +589,12 @@ body {
   height: 40px;
 }
 
-.footer-social-link:hover svg path,
-.footer-social-link:focus svg path {
+.footer-social-link:hover path,
+.footer-social-link:focus path {
   fill: #68A2CA;
 }
 
-.footer-social-link:active svg path {
+.footer-social-link:active path {
   fill: #68A2CA4D;
 }
 
@@ -1360,8 +1360,8 @@ body {
   margin-left: 46px;
 }
 
-.field-box svg path,
-.field-box:active svg path {
+.field-box path,
+.field-box:active path {
   fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -1370,11 +1370,11 @@ body {
   border-radius: 4px;
 }
 
-.field-button:focus svg path {
+.field-button:focus path {
   fill: rgba(0, 0, 0, 1);
 }
 
-.field-button:hover svg path {
+.field-button:hover path {
   fill: rgba(0, 0, 0, 1);
 }
 
